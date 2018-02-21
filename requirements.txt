@@ -1,5 +1,1 @@
-web.py
-lxml
-requests==2.18.4
-pyquery==1.4.0
-
+web.py==0.36
