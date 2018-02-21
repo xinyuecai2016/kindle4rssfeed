@@ -1,4 +1,4 @@
-web.py==0.38
+web.py
 lxml
 requests==2.18.4
 pyquery==1.4.0
