@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 import hashlib
-import web
+# import web
 import lxml
 import time
 import os
-import urllib2,json
+# import urllib2,json
 from lxml import etree
 from kindle4rss_deliver import kindle4rss_deliver
 class WeixinInterface:
