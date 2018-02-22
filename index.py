@@ -18,8 +18,6 @@ class index:
         current_data=web.data()
         if(current_data==b'kindle4rss'):
             kindle4rss_deliver()
-        elif(current_data==b'kindle4rssfinal'):
-            print("ok")
         else:
             print("error")
         return 'index'
