@@ -13,12 +13,16 @@ def is_the_right_time_to_deliver():
         return False
 class index:
     def GET(self):
-        if(is_the_right_time_to_deliver()):
-            kindle4rss_deliver()
-        return 'index'
+        return 'GET_COMPLETELY'
     def POST(self):
-        print(web.data())
-        return 'index'
+        current_data=web.data()
+        if(current_data==b'kindle4rss'):
+            kindle4rss_deliver()
+        elif(current_data==b'kindle4rssfinal'):
+            print("ok")
+        else:
+            print("error")
+        return 'POST_COMPLETELY'
 if __name__ == "__main__":
     port = os.environ.get("PORT", "5000")
     app = web.application(urls, globals())
