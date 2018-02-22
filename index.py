@@ -15,11 +15,11 @@ class index:
     def GET(self):
         return 'index'
     def POST(self):
-        current_data=web.data()
-        if(current_data==b'kindle4rss'):
-            kindle4rss_deliver()
-        else:
-            print("error")
+        # current_data=web.data()
+        # if(current_data==b'kindle4rss'):
+        #     kindle4rss_deliver()
+        # else:
+        #     print("error")
         return 'index'
 if __name__ == "__main__":
     port = os.environ.get("PORT", "5000")
