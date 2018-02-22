@@ -1,1 +1,6 @@
-web.py
+pip install web.py==0.40.dev0
+lxml
+requests==2.18.4
+pyquery==1.4.0
+
+
